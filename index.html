@@ -108,8 +108,15 @@ document.addEventListener('DOMContentLoaded', function () {
     
     <header>
   <img src="image/logo.png" alt="Logo" class="logo" loading="lazy">
-  <h1>蔡林淑岑夫人 訃告</h1>
+  <h1 class="no-wrap">蔡林淑岑夫人 訃告</h1>
 </header>
+
+<style>
+  .no-wrap {
+    white-space: nowrap;                 /* 禁止換行 */
+    font-size: clamp(20px, 5vw, 36px);    /* 20px~36px之間自動縮放 */
+  }
+</style>
 
 <main>
   <!-- 主要照片部分 -->
